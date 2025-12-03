@@ -1,0 +1,90 @@
+/* Layout helpers for account screen */
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.min-vh-100 {
+	min-height: 100vh;
+}
+
+/* Make images cover their column area */
+.object-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* Make images scale to fit their column without cropping */
+.object-contain {
+	width: 100%;
+	height: 100%;
+	object-fit: contain; /* prevents cropping, preserves aspect ratio */
+	object-position: center;
+	display: block;
+	background-color: #000; /* optional: fills letterbox space if image aspect differs */
+}
+
+/* Optional: small tweak for dark background if bootstrap not loaded yet */
+.bg-dark {
+	background-color: #111 !important;
+}
+
+/* Black navbar background helper */
+.bg-black {
+	background-color: #000 !important;
+}
+
+/* Boxed nav links */
+.nav-box {
+	display: inline-block;
+	padding: 0.45rem 1rem;
+	border-radius: 0.5rem;
+	border: 1px solid rgba(255,255,255,0.12);
+	background: rgb(0,0,0);
+	color: #fff !important;
+	transition: background-color 0.15s ease, transform 0.08s ease;
+	margin: 0 0.25rem;
+}
+
+.nav-box:hover, .nav-box:focus {
+	background: rgba(255,255,255,0.06);
+	text-decoration: none;
+	transform: translateY(-1px);
+}
+
+/* Active state */
+.nav-box.active {
+	background: rgba(255,255,255,0.12);
+	border-color: rgba(255,255,255,0.2);
+}
+
+.stats{
+    font-size: large;
+}
+
+/* removed empty .nav-item rule: visual styles are on .nav-box */
+
+/* Gold navbar background and adjustments for readable boxed links */
+.bg-gold {
+	background-color: #d4af37 !important; /* classic gold */
+}
+
+/* When using navbar-light on a gold background, make boxed links use dark text */
+.navbar-light .nav-link.nav-box {
+	color: #111 !important;
+	border-color: rgba(0,0,0,0.08);
+	background: rgba(0,0,0,0.03);
+}
+
+.navbar-light .nav-link.nav-box:hover,
+.navbar-light .nav-link.nav-box:focus {
+	background: rgba(0,0,0,0.06);
+}
+
+.navbar-light .nav-link.nav-box.active {
+	background: rgba(0,0,0,0.10);
+	border-color: rgba(0,0,0,0.14);
+}
+
