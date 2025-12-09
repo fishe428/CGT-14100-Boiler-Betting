@@ -10,27 +10,96 @@
     
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
-        <!-- Logo Placeholder -->
-        <div class="logo"><img src="images/Boiler-Betting logo clear.jpg" alt="logo" ></div>
+        <div class="logo"><img src="images/Boiler-Betting logo clear.jpg"></div>
 
-        <!-- Hamburger Menu -->
         <div class="hamburger" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <!-- Navigation Links -->
         <ul class="nav-links" id="navLinks">
-            <li><a href="">Place a Bet</a></li>
+            <li><a href="placeabet.html">Place a Bet</a></li>
             <li><a href="#games">Games</a></li>
             <li><a href="#account">Account Info</a></li>
             <li><a href="#help">Help/FAQ</a></li>
         </ul>
     </nav>
 
-    <img src="images/BoilerBanner.gif" alt="Logo"container-fluid style="width:100%; height:300px;">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-title">
+                BOILER
+                <div class="hero-chip">🎰</div>
+                BETTING
+            </div>
+            <p class="hero-tagline">Where Champions Place Their Bets</p>
+        </div>
+    </section>
+
+    <!-- Live Ticker -->
+    <div class="ticker">
+        <div class="ticker-content">
+            <span class="ticker-item">🏀 Lakers vs Warriors - LIVE</span>
+            <span class="ticker-item">⚽ Premier League - In Play</span>
+            <span class="ticker-item">🏈 NFL Sunday Night Football</span>
+            <span class="ticker-item">🎾 Grand Slam Final - LIVE</span>
+            <span class="ticker-item">⚾ World Series Game 7</span>
+            <span class="ticker-item">🏀 Lakers vs Warriors - LIVE</span>
+            <span class="ticker-item">⚽ Premier League - In Play</span>
+            <span class="ticker-item">🏈 NFL Sunday Night Football</span>
+            <span class="ticker-item">🎾 Grand Slam Final - LIVE</span>
+            <span class="ticker-item">⚾ World Series Game 7</span>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Instant Payouts</h3>
+                <p>Get your winnings instantly with our lightning-fast payout system. No waiting, no hassle.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure Platform</h3>
+                <p>Bank-level encryption and security protocols keep your funds and data completely safe.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Live Odds</h3>
+                <p>Real-time odds updates on thousands of events across all major sports worldwide.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎁</div>
+                <h3>Welcome Bonus</h3>
+                <p>New players receive up to $500 welcome bonus on their first deposit. Terms apply.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Ready</h3>
+                <p>Bet anywhere, anytime with our fully responsive mobile-optimized platform.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Expert Tips</h3>
+                <p>Access professional betting insights and analysis to make informed decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Ready to Win Big?</h2>
+        <a href="#bet" class="cta-button">Start Betting Now</a>
+    </section>
+
+
     <script src="js/script.js"></script>
 
 </body>
