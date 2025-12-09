@@ -1,9 +1,4 @@
-/* ====================================
-   MASTER STYLES.CSS - BOILER BETTING
-   Use this ONE file for ALL pages
-   ==================================== */
 
-/* ========== GLOBAL STYLES ========== */
 * {
     margin: 0;
     padding: 0;
@@ -739,3 +734,4 @@ body {
         font-size: 2rem;
     }
 }
+
