@@ -735,3 +735,357 @@ body {
     }
 }
 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #111111;
+  color: #000;
+}
+
+/* ------------------ TOP BAR ------------------ */
+
+.top-bar {
+  background-color: #d4aa00;
+  height: 80px;
+  width: 100%;
+  position: relative;
+}
+
+
+.site-title {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 12px;
+  color: #d7d7d7;
+}
+
+
+.top-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 40px;
+}
+
+
+.logo-wrapper {
+  margin-right: 50px;
+}
+
+.chip-logo {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+}
+
+
+.nav-buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-btn {
+  background-color: #d4aa00;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #000000;
+}
+
+.nav-btn:hover {
+  filter: brightness(1.1);
+}
+
+/* ------------------ PAGE BACKGROUND ------------------ */
+
+.page-bg {
+  background-color: #000000;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+/* ------------------ LOGIN CARD ------------------ */
+
+.login-card {
+  background-color: #ffffff;
+  width: 380px;
+  padding: 25px 30px 40px;
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+
+.input-label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+
+
+.sign-in-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.sign-in-btn:hover {
+  filter: brightness(1.1);
+}
+
+
+.error-message {
+  color: #c62828;
+  font-size: 12px;
+  min-height: 16px;
+}
+
+
+.forgot-link {
+  display: inline-block;
+  font-size: 11px;
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+
+.meme-wrapper {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.meme-img {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+/* ------------------ RESULTS SCREEN LAYOUT ------------------ */
+
+.results-panel {
+  background-color: #e4e4e4; 
+  width: 80%;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 60px 60px 70px;
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+
+.results-title-banner {
+  background-color: #d4aa00;     
+  padding: 40px 40px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.results-title {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+
+.results-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+
+.result-box {
+  background-color: #d4aa00;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  color: #000;
+}
+
+
+.result-box-left {
+  border: 4px solid #1e88e5;
+}
+
+
+.result-box-middle {
+  border: none;
+}
+
+
+.result-box-right {
+  padding: 10px;
+}
+
+
+.results-meme-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------------------ ACCOUNT SETUP PAGE ------------------ */
+
+.account-choice-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.account-choice-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+
+.big-login-btn {
+  background-color: #d4aa00;
+  color: #000;
+  border: none;
+  padding: 18px 80px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #000;
+}
+
+.big-login-btn:hover {
+  filter: brightness(1.1);
+}
+
+
+.patrick-row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.patrick-img {
+  width: 220px; 
+  height: auto;
+  object-fit: cover;
+}
+
+/* ------------------ BET CONFIRM PAGE ------------------ */
+
+.bet-confirm-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+
+.bet-confirm-panel {
+  background-color: #d4aa00;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.bet-bar {
+  background-color: #b3b3b3;
+  color: #000;
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  padding: 22px 30px;
+}
+
+.bet-bar-large {
+  width: 620px;
+  font-size: 20px;
+}
+
+.bet-bar-medium {
+  width: 470px;
+  font-size: 18px;
+}
+
+.bet-bar-bottom {
+  width: 520px;
+  font-size: 18px;
+}
+
+
+.bet-choice-btn {
+  width: 190px;
+  padding: 16px 0;
+  background-color: #b3b3b3;
+  border: none;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.bet-choice-btn:hover {
+  filter: brightness(1.05);
+}
+
+
+.bet-jerry-wrapper {
+  margin-top: -40px;  
+}
+
+.bet-jerry-img {
+  width: 220px;
+  height: auto;
+  object-fit: cover;
+}
+
