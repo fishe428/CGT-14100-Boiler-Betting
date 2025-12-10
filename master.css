@@ -1063,6 +1063,7 @@ body {
 }
 
 
+
 .bet-choice-btn {
   width: 190px;
   padding: 16px 0;
@@ -1089,3 +1090,22 @@ body {
   object-fit: cover;
 }
 
+.Q{
+	color: #DAA520;
+	font-weight: bold;
+}
+
+.A{
+	color: #fff;
+	font-style: italic;
+	margin-right: 2px;
+}
+
+#questions{
+	font-weight: bolder;
+	color: #DAA520 ;}
+
+	#Us{
+		border-left: 3px solid #DAA520;
+		padding-left: 2px;
+	}
