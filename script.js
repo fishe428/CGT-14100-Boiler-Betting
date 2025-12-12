@@ -167,3 +167,44 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+function signOut() {
+  localStorage.removeItem("email");
+  localStorage.removeItem("points");
+  localStorage.removeItem("soulSold");
+  window.location.href = "accountScreen.html";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const authAction = document.getElementById("authAction");
+  if (!authAction) return; // only runs on pages that have the link
+
+  const email = localStorage.getItem("email");
+  const points = localStorage.getItem("points");
+  const soulSold = localStorage.getItem("soulSold");
+
+  // If you're already filling these, keep your existing code — this only handles the link.
+  // (Optional) If you have these IDs on the page, this will keep working:
+  const nameEl = document.getElementById("name");
+  const pointsEl = document.getElementById("points");
+  const soulEl = document.getElementById("soul");
+
+  if (email) {
+    // Logged in → show sign out
+    authAction.textContent = "Sign out";
+    authAction.href = "#";
+    authAction.onclick = function (e) {
+      e.preventDefault();
+      signOut();
+    };
+
+    if (nameEl) nameEl.textContent = email;
+    if (pointsEl) pointsEl.textContent = points || "0";
+    if (soulEl) soulEl.textContent = soulSold || "Yes";
+  } else {
+    // Logged out → show sign in
+    authAction.textContent = "Sign in";
+    authAction.href = "accountsetup.html";
+    authAction.onclick = null;
+  }
+});
