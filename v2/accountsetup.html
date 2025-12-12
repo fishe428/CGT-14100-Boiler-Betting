@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Setup - Boiler Betting</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Boiler-Betting logo clear.jpg" alt="Boiler Betting Logo">
+            </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="placeabet.html">Place a Bet</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="accountsetup.html">Account</a></li>
+            <li><a href="soul.html">Soul Contract</a></li>
+        </ul>
+    </nav>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <div class="login-card">
+            <h1>Account Login</h1>
+            
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <label for="email" class="input-label">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    class="input-field"
+                    placeholder="Enter your email"
+                    required
+                />
+
+                <label for="password" class="input-label">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    class="input-field"
+                    placeholder="Enter your password"
+                    required
+                />
+
+                <button type="submit" class="sign-in-btn">Sign In</button>
+
+                <p id="errorMessage" class="error-message">Invalid credentials. Please try again.</p>
+
+                <a href="#" class="forgot-link">Forgot your password?</a>
+            </form>
+
+            <div class="login-options">
+                <p>OR SIGN IN WITH</p>
+                <button class="social-btn" onclick="alert('MyPurdue login coming soon!')">
+                    🎓 LOGIN WITH MYPURDUE
+                </button>
+                <button class="social-btn" onclick="alert('Just kidding! Please use regular login 😄')">
+                    💳 LOGIN WITH MOM'S CREDIT CARD
+                </button>
+                <button class="social-btn" onclick="window.location.href='index.html'">
+                    🏃 NAH, I'M NOT TRYNA SPEEDRUN BANKRUPTCY
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <!-- <script src="master.js"></script> -->
+</body>
+</html>

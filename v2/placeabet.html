@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place a Bet - Boiler Betting</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Boiler-Betting logo clear.jpg" alt="Boiler Betting Logo">
+            </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="placeabet.html">Place a Bet</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="accountsetup.html">Account</a></li>
+            <li><a href="soul.html">Soul Contract</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="page-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">FEATURED</h2>
+                <ul class="sidebar-list">
+                    <li><a href="#featured-1">NCAA Championships</a></li>
+                    <li><a href="#featured-2">Big Ten Tournament</a></li>
+                    <li><a href="#featured-3">Rivalry Week Special</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">PURDUE SPORTS</h2>
+                <ul class="sidebar-list">
+                    <li><a href="#basketball">🏀 Basketball</a></li>
+                    <li><a href="#football">🏈 Football</a></li>
+                    <li><a href="#volleyball">🏐 Volleyball</a></li>
+                    <li><a href="#wrestling">🤼 Wrestling</a></li>
+                    <li><a href="#baseball">⚾ Baseball</a></li>
+                    <li><a href="#soccer">⚽ Soccer</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">UPCOMING MATCHES</h2>
+                <ul class="sidebar-list upcoming-matches">
+                    <li><a href="#match-1">Purdue vs Indiana</a></li>
+                    <li><a href="#match-2">Purdue vs Ohio State</a></li>
+                    <li><a href="#match-3">Purdue vs Michigan</a></li>
+                    <li><a href="https://purduesports.com" target="_blank">View Full Schedule →</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Betting Content -->
+        <main class="betting-content">
+            <h1 class="page-title">GAMES</h1>
+
+            <!-- Basketball Section -->
+            <section class="sport-section" id="basketball">
+                <div class="match-card" id="featured-1">
+                    <div class="match-header">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="images/purduelogo.png" alt="Purdue Logo">
+                            </div>
+                            <span class="team-name">Purdue</span>
+                        </div>
+                        <div class="match-vs">VS</div>
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="images/pennstate.png" alt="Penn State Logo">
+                            </div>
+                            <span class="team-name">Penn State</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <span class="match-date">Dec 15, 2025 • 7:00 PM EST</span>
+                        <span class="match-type">Big Ten Conference</span>
+                    </div>
+                    <div class="betting-options">
+                        <button class="bet-button" onclick="placeBet('Purdue', '+14.5/-125')">
+                            <span class="odds-spread">+14.5</span>
+                            <span class="odds-value">-125</span>
+                        </button>
+                        <button class="bet-button" onclick="placeBet('Penn State', '+14.5/-125')">
+                            <span class="odds-spread">+14.5</span>
+                            <span class="odds-value">-125</span>
+                        </button>
+                        <button class="bet-button" onclick="placeBet('Over 145.5', '-110')">
+                            <span class="odds-spread">O 145.5</span>
+                            <span class="odds-value">-110</span>
+                        </button>
+                    </div>
+                    <div class="betting-options">
+                        <button class="bet-button" onclick="placeBet('Purdue ML', '+200')">
+                            <span class="odds-spread">ML</span>
+                            <span class="odds-value">+200</span>
+                        </button>
+                        <button class="bet-button" onclick="placeBet('Penn State ML', '-240')">
+                            <span class="odds-spread">ML</span>
+                            <span class="odds-value">-240</span>
+                        </button>
+                        <button class="bet-button" onclick="placeBet('Under 145.5', '-110')">
+                            <span class="odds-spread">U 145.5</span>
+                            <span class="odds-value">-110</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="match-card" id="featured-2">
+                    <div class="match-header">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="images/purduelogo.png" alt="Purdue Logo">
+                            </div>
+                            <span class="team-name">Purdue</span>
+                        </div>
+                        <div class="match-vs">VS</div>
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="images/purduelogo.png" alt="Northwestern Logo">
+                            </div>
+                            <span class="team-name">Northwestern</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <span class="match-date">Dec 18, 2025 • 8:30 PM EST</span>
+                        <span class="match-type">Big Ten Conference</span>
+                    </div>
+                    <div class="betting-options">
+                        <button class="bet-button" onclick="placeBet('Purdue', '-7.5/-115')">
+                            <span class="odds-spread">-7.5</span>
+                            <span class="odds-value">-115</span>
+                        </button>
+                        <button class="bet-button" onclick="placeBet('Northwestern', '+7.5/-105')">
+                            <span class="odds-spread">+7.5</span>
+                            <span class="odds-value">-105</span>
+                        </button>
+                        <button class="bet-button" onclick="placeBet('Over 138.5', '-110')">
+                            <span class="odds-spread">O 138.5</span>
+                            <span class="odds-value">-110</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Football Section -->
+            <section class="sport-section" id="football">
+                <div class="match-card" id="match-1">
+                    <div class="match-header">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="images/purduelogo.png" alt="Purdue Logo">
+                            </div>
+                            <span class="team-name">Purdue</span>
+                        </div>
+                        <div class="match-vs">VS</div>
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="images/lafalogo.png" alt="Lafayette Logo">
+                            </div>
+                            <span class="team-name">Lafayette</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <span class="match-date">Dec 22, 2025 • 3:00 PM EST</span>
+                        <span class="match-type">Non-Conference</span>
+                    </div>
+                    <div class="betting-options">
+                        <button class="bet-button" onclick="placeBet('Purdue', '-21.5/-110')">
+                            <span class="odds-spread">-21.5</span>
+                            <span class="odds-value">-110</span>
+                        </button>
+                        <button class="bet-button" onclick="placeBet('Lafayette', '+21.5/-110')">
+                            <span class="odds-spread">+21.5</span>
+                            <span class="odds-value">-110</span>
+                        </button>
+                        <button class="bet-button" onclick="placeBet('Over 52.5', '-110')">
+                            <span class="odds-spread">O 52.5</span>
+                            <span class="odds-value">-110</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Bet Confirmation Modal -->
+    <div class="modal" id="betModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Confirm Your Bet</h2>
+            <div id="betDetails"></div>
+            <div class="modal-actions">
+                <button class="confirm-btn" onclick="confirmBet()">Confirm Bet</button>
+                <button class="cancel-btn" onclick="closeModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The REAL Login</title>
+  <link rel="stylesheet" href="master.css" />
+</head>
+<body>
+  
+  <header class="top-bar">
+    <div class="site-title">The REAL Login</div>
+
+    <div class="top-inner">
+      
+      <div class="logo-wrapper">
+        <img src="Boiler-Betting logo.jpg" alt="Purdue Chip Logo" class="chip-logo">
+      </div>
+
+      
+      <nav class="nav-buttons">
+        <button class="nav-btn">PLACE A BET</button>
+        <button class="nav-btn">GAMES</button>
+        <button class="nav-btn">ACCOUNT INFO</button>
+        <button class="nav-btn">HELP/FAQ</button>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main class="page-bg">
+    <section class="login-card">
+      <form id="loginForm">
+        
+        <label for="email" class="input-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="input-field"
+          placeholder="Email"
+          required
+        />
+
+        
+        <label for="password" class="input-label">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="input-field"
+          placeholder="Password"
+          required
+        />
+
+        
+        <button type="submit" class="sign-in-btn">Sign In</button>
+
+        
+        <p id="errorMessage" class="error-message"></p>
+
+        
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </form>
+
+    
+      <div class="meme-wrapper">
+        <img src="funfact.jpg" alt="Gambling Meme" class="meme-img">
+      </div>
+    </section>
+  </main>
+
+  <script src="master.js"></script>
+</body>
+</html>
+
+
