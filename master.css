@@ -1195,3 +1195,30 @@ body > *:not(.fire-overlay) {
     font: 36px 'Arial', Gadget, sans-serif;
     text-shadow: 0px 5px 15px #000000;
 }
+
+.accountLink {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.winBigContainer {
+  width: 100%;
+  height: 100%;              
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;          
+}
+
+.winBigContainer a {
+  width: 100%;
+  height: 100%;
+}
+
+.winBigGif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         
+}
