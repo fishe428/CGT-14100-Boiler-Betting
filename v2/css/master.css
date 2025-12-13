@@ -888,26 +888,26 @@ body > *:not(.fire-overlay) {
 }
 
 @media (max-width: 768px) {
-    /* FIXED: Mobile menu now appears BELOW navbar, not covering content */
-    .nav-links {
-        position: fixed;
-        top: 110px; /* Below navbar */
-        left: 0;
-        right: 0;
-        background: linear-gradient(to right, #DAA520, #B8860B);
+  .navbar
+    {
+     flex-wrap: wrap;
+     align-items: flex-start;
+    }
+
+     .nav-links {
+        position: static;
+        margin-top: 30px;
+        width: 100%;
         flex-direction: column;
-        gap: 0;
-        padding: 0;
         max-height: 0;
         overflow: hidden;
+        background: linear-gradient(to right, #DAA520, #B8860B);
         transition: max-height 0.4s ease;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-        z-index: 9999; /* Below navbar but above content */
+        margin-left: 0;
     }
 
     .nav-links.active {
-        max-height: 500px;
-        padding: 20px;
+        max-height: 600px;
     }
 
     .nav-links li {
@@ -1067,5 +1067,6 @@ body > *:not(.fire-overlay) {
         height: 120px;
     }
 }
+
 
 
