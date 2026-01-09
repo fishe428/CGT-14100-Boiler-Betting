@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The REAL Login</title>
+  <link rel="stylesheet" href="css/master.css" />
+</head>
+<body>
+  
+  <nav class="navbar">
+        <div class="logo"><a href="index.html"><img src="images/Boiler-Betting logo clear.jpg" alt=""></a></div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="placeabet.html">Place a Bet</a></li>
+            <li><a href="https://purduesports.com/all-sports-schedule">Games</a></li>
+            <li><a href="accountScreen.html">Account Info</a></li>
+            <li><a href="AboutUs.html">Help/FAQ</a></li>
+        </ul>
+    </nav>
+
+  
+  <main class="page-bg">
+    <section class="login-card">
+      <form id="loginForm">
+        
+        <label for="email" class="input-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="input-field"
+          placeholder="Email"
+          required
+        />
+
+        
+        <label for="password" class="input-label">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="input-field"
+          placeholder="Password"
+          required
+        />
+
+        
+        <button type="submit" class="sign-in-btn">Sign In</button>
+
+        
+        <p id="errorMessage" class="error-message"></p>
+
+        
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </form>
+
+    
+      <div class="meme-wrapper">
+        <img src="images/funfact.jpg" alt="Gambling Meme" class="meme-img">
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
